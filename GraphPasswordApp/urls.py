@@ -2,7 +2,8 @@ from django.urls import path
 
 from . import views
 
-urlpatterns = [path("index.html", views.index, name="index"),
+urlpatterns = [  path('', views.index, name='home'),
+    	   path("index.html", views.index, name="index"),
 	       path("UserLogin", views.UserLogin, name="UserLogin"),
 	       path("Login.html", views.Login, name="Login"),
 	       path("AdminLogin.html", views.AdminLogin, name="AdminLogin"),
