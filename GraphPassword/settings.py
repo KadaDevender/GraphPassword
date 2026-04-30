@@ -8,8 +8,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-1234567890abcdef'
 
 DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
-
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'web-production-7f1fe4.up.railway.app'
+]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
